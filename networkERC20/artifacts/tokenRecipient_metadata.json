@@ -1,0 +1,68 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_token",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_extraData",
+						"type": "bytes"
+					}
+				],
+				"name": "receiveApproval",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"gameprofits-galactic-spdgcs-contracts/networkERC20/gold.sol": "tokenRecipient"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"gameprofits-galactic-spdgcs-contracts/networkERC20/gold.sol": {
+			"keccak256": "0x5c9f779a0ca288103a722aeadf019f2262cc27533deddefc7539458284c72166",
+			"urls": [
+				"bzz-raw://40de24d3074a3620d634373cedd7bbd9b67dc11c7cef7a8aace8e3cb7cfde561",
+				"dweb:/ipfs/QmNRZw8uxBiKbgjERZEDK6Zw2EFLxJDUCn2QJeERPEEv3H"
+			]
+		}
+	},
+	"version": 1
+}

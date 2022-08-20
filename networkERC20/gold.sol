@@ -23,7 +23,7 @@ contract TokenERC20 {
     // Public variables of the token
     string public name;
     string public symbol;
-    uint8 public decimals = 2;
+    uint8 public decimals = 7;
     // 18 decimals is the strongly suggested default, avoid changing it
     uint256 public totalSupply;
 
