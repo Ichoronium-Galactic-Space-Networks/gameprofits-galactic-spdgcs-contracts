@@ -75,6 +75,25 @@
 				"anonymous": false,
 				"inputs": [
 					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "target",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "frozen",
+						"type": "bool"
+					}
+				],
+				"name": "FrozenFunds",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
 						"indexed": true,
 						"internalType": "address",
 						"name": "from",
@@ -248,6 +267,30 @@
 				"type": "function"
 			},
 			{
+				"constant": false,
+				"inputs": [],
+				"name": "buy",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "buyPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"constant": true,
 				"inputs": [],
 				"name": "decimals",
@@ -263,6 +306,67 @@
 				"type": "function"
 			},
 			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "target",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "freeze",
+						"type": "bool"
+					}
+				],
+				"name": "freezeAccount",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "frozenAccount",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "target",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "mintedAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "mintToken",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"constant": true,
 				"inputs": [],
 				"name": "name",
@@ -275,6 +379,71 @@
 				],
 				"payable": false,
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "sell",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "sellPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "newSellPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "newBuyPrice",
+						"type": "uint256"
+					}
+				],
+				"name": "setPrices",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -363,6 +532,21 @@
 				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -389,6 +573,29 @@
 					"params": {
 						"_from": "the address of the sender",
 						"_value": "the amount of money to burn"
+					}
+				},
+				"freezeAccount(address,bool)": {
+					"params": {
+						"freeze": "either to freeze it or not",
+						"target": "Address to be frozen"
+					}
+				},
+				"mintToken(address,uint256)": {
+					"params": {
+						"mintedAmount": "the amount of tokens it will receive",
+						"target": "Address to receive the tokens"
+					}
+				},
+				"sell(uint256)": {
+					"params": {
+						"amount": "amount of tokens to be sold"
+					}
+				},
+				"setPrices(uint256,uint256)": {
+					"params": {
+						"newBuyPrice": "Price users can buy from the contract",
+						"newSellPrice": "Price the users can sell to the contract"
 					}
 				},
 				"transfer(address,uint256)": {
@@ -420,19 +627,34 @@
 				"burnFrom(address,uint256)": {
 					"notice": "Destroy tokens from other account      * Remove `_value` tokens from the system irreversibly on behalf of `_from`. "
 				},
-				"constructor": "Constrctor function      * Initializes contract with initial supply tokens to the creator of the contract",
+				"buy()": {
+					"notice": "Buy tokens from contract by sending ether"
+				},
+				"freezeAccount(address,bool)": {
+					"notice": "`freeze? Prevent | Allow` `target` from sending & receiving tokens"
+				},
+				"mintToken(address,uint256)": {
+					"notice": "Create `mintedAmount` tokens and send it to `target`"
+				},
+				"sell(uint256)": {
+					"notice": "Sell `amount` tokens to contract"
+				},
+				"setPrices(uint256,uint256)": {
+					"notice": "Allow users to buy tokens for `newBuyPrice` eth and sell tokens for `newSellPrice` eth"
+				},
 				"transfer(address,uint256)": {
 					"notice": "Transfer tokens      * Send `_value` tokens to `_to` from your account "
 				},
 				"transferFrom(address,address,uint256)": {
 					"notice": "Transfer tokens from other address      * Send `_value` tokens to `_to` in behalf of `_from` "
 				}
-			}
+			},
+			"notice": "***************************************"
 		}
 	},
 	"settings": {
 		"compilationTarget": {
-			"gameprofits-galactic-spdgcs-contracts/networkERC20/gold.sol": "TokenERC20"
+			"gameprofits-galactic-spdgcs-contracts/finance/gold.sol": "MyAdvancedToken"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -443,7 +665,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"gameprofits-galactic-spdgcs-contracts/networkERC20/gold.sol": {
+		"gameprofits-galactic-spdgcs-contracts/finance/gold.sol": {
 			"keccak256": "0x5c9f779a0ca288103a722aeadf019f2262cc27533deddefc7539458284c72166",
 			"urls": [
 				"bzz-raw://40de24d3074a3620d634373cedd7bbd9b67dc11c7cef7a8aace8e3cb7cfde561",

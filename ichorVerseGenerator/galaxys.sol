@@ -8,8 +8,10 @@ contract galaxy{
 struct galaxy{
 int256 id;
 string name;
-
-
+int radius;
+int depth;
+string type;
+int256 age;
 }
 
 
