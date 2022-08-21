@@ -1,0 +1,532 @@
+{
+	"compiler": {
+		"version": "0.8.16+commit.07a7930e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "gameprofitsExperimentSettings",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gameprofitsFairPlaySettings",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gameprofitsFairSoulsActSettings",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gameprofitsFairValueSettings",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gameprofitsGoverenenceSettings",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gameprofitsIchoroniumTableSettings",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gameprofitsMasterVideoGamesSettings",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gameprofitsMetaVerseSettings",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gameprofitsMetaVerseUniverseItems",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gameprofitsPremiumExchangeTraderSettings",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gameprofitsReturnSettings",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "bool",
+								"name": "gameNetworkActive",
+								"type": "bool"
+							},
+							{
+								"internalType": "bool",
+								"name": "gamesAreOn",
+								"type": "bool"
+							},
+							{
+								"internalType": "bool",
+								"name": "gamesAreDeactivated",
+								"type": "bool"
+							},
+							{
+								"internalType": "bool",
+								"name": "gamesAreCoolingDown",
+								"type": "bool"
+							},
+							{
+								"internalType": "bool",
+								"name": "gamesKillSwitch",
+								"type": "bool"
+							},
+							{
+								"internalType": "address",
+								"name": "gameprofitsfinanceSettings",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "gameprofitsExperimentSettings",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "gameprofitsGoverenenceSettings",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "gameprofitsIchoroniumTableSettings",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "gameprofitsMetaVerseSettings",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "gameprofitsMetaVerseUniverseItems",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "gameprofitsFairPlaySettings",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "gameprofitsFairValueSettings",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "gameprofitsFairSoulsActSettings",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "gameprofitsPremiumExchangeTraderSettings",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "gameprofitsMasterVideoGamesSettings",
+								"type": "address"
+							}
+						],
+						"internalType": "struct gameprofitsGalacticNetworkSettings.gameprofitsSettings",
+						"name": "networkSetting",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gameprofitsfinanceSettings",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isgameNetworkActive",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isgamesAreCoolingDown",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isgamesAreDeactivated",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isgamesAreOn",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isgamesKillSwitch",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "switchgameNetworkActive",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newSetting",
+						"type": "address"
+					}
+				],
+				"name": "switchgameprofitsExperimentSettings",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newSetting",
+						"type": "address"
+					}
+				],
+				"name": "switchgameprofitsFairPlaySettings",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newSetting",
+						"type": "address"
+					}
+				],
+				"name": "switchgameprofitsFairSoulsActSettings",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newSetting",
+						"type": "address"
+					}
+				],
+				"name": "switchgameprofitsFairValueSettings",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newSetting",
+						"type": "address"
+					}
+				],
+				"name": "switchgameprofitsGoverenenceSettings",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newSetting",
+						"type": "address"
+					}
+				],
+				"name": "switchgameprofitsIchoroniumTableSettings",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newSetting",
+						"type": "address"
+					}
+				],
+				"name": "switchgameprofitsMasterVideoGamesSettings",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newSetting",
+						"type": "address"
+					}
+				],
+				"name": "switchgameprofitsMetaVerseSettings",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newSetting",
+						"type": "address"
+					}
+				],
+				"name": "switchgameprofitsMetaVerseUniverseItems",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newSetting",
+						"type": "address"
+					}
+				],
+				"name": "switchgameprofitsPremiumExchangeTraderSettings",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newSetting",
+						"type": "address"
+					}
+				],
+				"name": "switchgameprofitsfinanceSettings",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "switchgamesAreCoolingDown",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "switchgamesAreDeactivated",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "switchgamesAreOn",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "switchgamesKillSwitch",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"gameprofits-galactic-spdgcs-contracts/governence/gameProfitsGalacticNetworkSettings.sol": "gameprofitsGalacticNetworkSettings"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"gameprofits-galactic-spdgcs-contracts/governence/gameProfitsGalacticNetworkSettings.sol": {
+			"keccak256": "0xbf5d89927be7996b4cefcdf8b50b5eff19c1ef6a2eeefd32f5d2c074625c649a",
+			"license": "CC - NON COMMERCIAL",
+			"urls": [
+				"bzz-raw://639bb0ecb225069b52568cf947dd7bd92cf1be433d78768afd86edc194ef2138",
+				"dweb:/ipfs/QmeY8bVva7K8cMSEdbUyJVfTzNrqLj4E1S2yswvN6SAKMh"
+			]
+		}
+	},
+	"version": 1
+}
